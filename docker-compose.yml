@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  app:
+    image: haceneterbouche/penguin_app:1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure

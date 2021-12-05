@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "penguin_classifier"
+version = "0.1.0"
+description = ""
+authors = ["haceneterbouche <hacene@powder.gg>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "1.0.5"
+matplotlib = "3.2.2"
+seaborn = "0.11.0"
+streamlit = "0.81.1"
+scikit_learn = "0.24.1"
+pydantic = "^1.8.2"
+fastapi = "^0.70.0"
+uvicorn = "^0.15.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
